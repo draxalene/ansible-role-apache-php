@@ -1,14 +1,6 @@
 ---
 # tasks file for hoplacloud.apache_php
 
-- name: Install Ondrej Apache2 PPA Repository
-  apt_repository:
-    repo: 'ppa:ondrej/apache2'
-
-- name: Install Ondrej PHP PPA Repository
-  apt_repository:
-    repo: 'ppa:ondrej/php'
-
 - name: Install Apache2 and PHP-FPM Packages
   apt:
     name:
