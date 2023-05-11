@@ -31,4 +31,4 @@ ansible-galaxy install draxalene.apache_php
 echo "- draxalene.apache_php (${currdate})" >> /etc/hopla.cloud-roles
 
 # Install oneclick app
-ansible-playbook /root/.ansible/roles/hoplacloud.apache_php/playbooks/apache_php.yml
+ansible-playbook /root/.ansible/roles/draxalene.apache_php/playbooks/apache_php.yml
