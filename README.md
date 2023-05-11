@@ -1,7 +1,9 @@
 Role Name
 =========
 
-Hopla.cloud role for ansible to apache2, php-fpm, Memcached.
+draxalene.apache_php
+
+Draxalene role for ansible to apache2, php-fpm, Memcached. (by hopla.cloud)
 
 Requirements
 ------------
@@ -16,8 +18,7 @@ user_name: "user"
 user_email: "user@example.com"
 
 Php variables
-- php_version: "7.3"
-(Possible : 5.6 7.0 7.1 7.2 7.3)
+- php_version: "8.1"
 - post_max_size: "64M"
 - upload_max_filesize: "64M"
 - short_open_tag: "On"
@@ -29,8 +30,8 @@ Memcached variables
 Dependencies
 ------------
 
-- hoplacloud.linux_update
-- hoplacloud.linux_motd
+- draxalene.linux_update
+- draxalene.linux_motd
 
 
 Example Playbook
@@ -39,7 +40,7 @@ Example Playbook
     - hosts: localhost
       remote_user: root
       roles:
-         - hoplacloud.apache_php
+         - draxalene.apache_php
 
 License
 -------
@@ -49,4 +50,4 @@ GPLv3
 Author Information
 ------------------
 
-This role was created in 2019 by [hopla.cloud](https://hopla.cloud)
+Alexandre MOREAU by hopla.cloud
