@@ -9,4 +9,4 @@
         server_type: apache
         cacheable: yes
   roles:
-    - hoplacloud.apache_php
+    - draxalene.apache_php
